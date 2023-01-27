@@ -12,6 +12,7 @@ export default function App() {
             href="https://github.com/KettySalt/react-matt-weather"
             target="_blank"
             rel="noreferrer"
+            className="align-middle"
           >
             open sourced{" "}
           </a>
