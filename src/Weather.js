@@ -16,9 +16,10 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       wind: Math.round(response.data.wind.speed),
       humidity: response.data.main.humidity,
-      icoUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icoUrl: response.data.weather[0].icon,
     });
   }
+  console.log(weatherData.iconUrl);
 
   function search() {
     let apiKey = "678ae7998073366291caac009dc1fda7";
